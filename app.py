@@ -975,3 +975,12 @@ else:
         dashboard()
     elif st.session_state.current_page == "interview":
         interview()
+
+# RECORD AUDIO
+
+st.title("Mic Test")
+
+audio = st.audio_input("Speak now")
+
+if audio:
+    st.audio(audio)
